@@ -53,8 +53,8 @@ header {
     animation-duration: 0.8s;
 }
 @keyframes only1snow{
-    from(top: -200px)
-    to(top: 0;)
+    from{top: -200px}
+    to{top: 0;}
 }
 .logo{
     display: inline-block;
