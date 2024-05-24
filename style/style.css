@@ -125,3 +125,19 @@ header {
 .header-social ul li a:hover i{
     color: #01ca8b;
 }
+
+/* Banner */
+.banner{
+	padding: 16em 0 14em 0;
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	box-shadow: -5px -5px 30px #01ca8b 5px 5px 30px 5px #01ca8b;
+}
+.banner-content {
+	width: 80%;
+}
+.banner-content {
+	color: #fff
+	font-size: 80px;
+	font-weight: 800;
