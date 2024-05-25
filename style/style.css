@@ -53,8 +53,12 @@ header {
     animation-duration: 0.8s;
 }
 @keyframes only1snow{
-    from(top: -200px)
-    to(top: 0;)
+    from{
+        top: -200px;
+    }
+    to{
+        top: 0;
+    }
 }
 .logo{
     display: inline-block;
@@ -138,7 +142,7 @@ header {
 	width: 80%;
 }
 .banner-content h1{
-	color: #fff
+	color: #fff;
 	font-size: 80px;
 	font-weight: 800;
 	margin-top: 10px;
@@ -153,7 +157,7 @@ header {
 .service a{
 	padding: 34px 20px;
 	display: inline-block;
-	width: 33%
+	width: 33%;
 	color: #fff;
 	font-size: 30px;
 	font-weight: 800;
