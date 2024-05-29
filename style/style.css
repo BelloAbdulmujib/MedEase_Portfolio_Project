@@ -53,8 +53,12 @@ header {
     animation-duration: 0.8s;
 }
 @keyframes only1snow{
-    from(top: -200px)
-    to(top: 0;)
+    from{
+        top: -200px;
+    }
+    to{
+        top: 0;
+    }
 }
 .logo{
     display: inline-block;
@@ -125,3 +129,90 @@ header {
 .header-social ul li a:hover i{
     color: #01ca8b;
 }
+
+/* Banner */
+.banner{
+	padding: 16em 0 14em 0;
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	box-shadow: -5px -5px 30px #01ca8b 5px 5px 30px 5px #01ca8b;
+}
+.banner-content {
+	width: 80%;
+}
+.banner-content h1{
+	color: #fff;
+	font-size: 80px;
+	font-weight: 800;
+	margin-top: 10px;
+	line-height: 80px;
+}
+.service {
+	border-radius: 10px;
+	background: #ffffff45;
+	border: 1px solid #dfdfdf94;
+	margin-top: 100px;
+}
+.service a{
+	padding: 34px 20px;
+	display: inline-block;
+	width: 33%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 800;
+	border-right: 1px solid #fff;
+	margin: 0 -2px;
+	height: 180px;
+	vertical-align: top;
+}
+.service a:last-child{
+	border-right: none;
+	background-image: url(../images/card.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 34.2%;
+}
+.service-content{
+	width: calc(100% - 47px);
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.service-content::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	background: #fff;
+	height: 20px;
+	width: 0;
+	transition: 0.25 ease-in-out;
+}
+.service-content:hover::before{
+	width: 50%;
+}
+.service-btn{
+	width: 40px;
+	display: inline-block;
+	height: 40px;
+	background: #ffffff45;
+	border-radius: 50%;
+	position: relative;
+	vertical-align: middle;
+}
+.service-btn i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.2s ease-in-out;
+}
+.service-icon {
+	font-size: 40px;
+	margin-top: 22px;
+}
+
