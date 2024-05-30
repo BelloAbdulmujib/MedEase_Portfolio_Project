@@ -4,6 +4,10 @@ MedEase is a healthcare booking website designed to provide users with easy acce
 
 ![alt text](image-1.png)
 
+The background image, displayed prominently on the website, serves as a visual representation of MedEase's core purpose. It provides users with a captivating glimpse into the essence of the website and what it offers. This carefully chosen image not only enhances the aesthetic appeal of the platform but also communicates key aspects of its functionality and services at a glance.
+
+Featuring a compelling visual of healthcare professionals, patients, or medical facilities, the background image encapsulates the essence of MedEase - a comprehensive healthcare booking website designed to provide users with easy access to medical services and appointments. Its inclusion underscores the user-centric approach of MedEase, setting the tone for a seamless and efficient healthcare booking experience.
+
 
 MedEase is a comprehensive healthcare booking website crafted to address the increasing demand for efficient access to medical services and appointments. With a user-centric design and intuitive functionalities, MedEase aims to bridge the gap between healthcare providers and patients, ensuring a seamless booking experience for all.
 
