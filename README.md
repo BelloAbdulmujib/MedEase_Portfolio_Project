@@ -44,3 +44,6 @@ COVID-19 Response Information:
 
 Provide information about the healthcare provider's response to COVID-19.
 Offer resources and guidelines for staying safe during the pandemic.
+
+Contributing
+Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
