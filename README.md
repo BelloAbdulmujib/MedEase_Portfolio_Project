@@ -1,5 +1,8 @@
 MedEase - Healthcare Booking Website
+
 MedEase is a healthcare booking website designed to provide users with easy access to medical services and appointments. This README provides an overview of the project structure and functionalities.
+
+
 ![alt text](image-1.png)
 
 Table of Contents
