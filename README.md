@@ -1,6 +1,10 @@
 MedEase - Healthcare Booking Website
 
 MedEase is a healthcare booking website designed to provide users with easy access to medical services and appointments. This README provides an overview of the project structure and functionalities. 
+
+![alt text](image-1.png)
+
+
 ChatGPT
 Certainly! Here's an expanded overview of MedEase, detailing its objectives, target audience, and how it addresses the need for streamlined access to medical services:
 
@@ -36,8 +40,6 @@ MedEase represents a pioneering solution in the healthcare industry, leveraging 
 
 
 
-![alt text](image-1.png)
-
 Table of Contents
 
 Introduction
@@ -51,6 +53,8 @@ Introduction
 - Contributing
 
 - License
+
+- Conclusion
 
 Introduction
 MedEase aims to simplify the process of booking medical appointments and accessing healthcare services. The website offers a user-friendly interface for both users and administrators, allowing them to manage appointments, view working hours, and access important information about COVID-19 response.
