@@ -6,12 +6,18 @@ MedEase is a healthcare booking website designed to provide users with easy acce
 ![alt text](image-1.png)
 
 Table of Contents
+
 Introduction
-Features
-Installation
-Usage
-Contributing
-License
+
+- Features
+
+- Installation
+
+- Usage
+
+- Contributing
+
+- License
 
 Introduction
 MedEase aims to simplify the process of booking medical appointments and accessing healthcare services. The website offers a user-friendly interface for both users and administrators, allowing them to manage appointments, view working hours, and access important information about COVID-19 response.
