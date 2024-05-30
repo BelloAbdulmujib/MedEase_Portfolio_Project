@@ -15,15 +15,13 @@ Introduction
 
 - Features
 
-- Installation
+- Target Audience
 
-- Usage
-
-- Contributing
-
-- License
+- How MedEase Works
 
 - Conclusion
+
+- License
 
 Introduction
 MedEase aims to simplify the process of booking medical appointments and accessing healthcare services. The website offers a user-friendly interface for both users and administrators, allowing them to manage appointments, view working hours, and access important information about COVID-19 response.
