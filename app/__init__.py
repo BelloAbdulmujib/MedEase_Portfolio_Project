@@ -17,10 +17,13 @@ def create_app(config_class='config.Config'):
     migrate.init_app(app, db)
     login.init_app(app)
 
-    from app.routes import auth, patient, doctor, appointment
+    from app.routes import auth, patient, doctor, appointment, home_page
+    
     app.register_blueprint(auth.bp)
     app.register_blueprint(patient.bp)
     app.register_blueprint(doctor.bp)
     app.register_blueprint(appointment.bp)
+    if app.register_blueprint(home_page.bp):
+        print("homepage imported")
 
     return app

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(/app/static/images/2\ background.jpg);
+    background: url no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 200vh;
+    width: 130vh;
     color: #333;
 }
 
@@ -22,23 +22,24 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
-    width: 100%;
+    max-width: 500px;
+    width: 140%;
     margin: 0 auto;
+    position: relative;
 }
 
 .register-link {
-    display: inline-block;
+    display: flex;
     text-align: center;
-    margin-top: 710px;
-    margin-left: 2px;
-    font-size: 15px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    margin-top: 0px;
     color: #007bff;
     text-decoration: none;
 }
 
 .register-link:hover {
-    color: #575e66;
+    color: #0056b3;
 }
 
 form p {

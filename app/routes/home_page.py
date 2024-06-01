@@ -3,9 +3,15 @@ from flask_login import login_required, current_user
 
 bp = Blueprint('home_page', __name__)
 
-@app.route('/home_page')
+
+@bp.route('/home_page')
 @login_required
-def landing():
-    """Handles the landing page"""
+def index():
+    """Handles the home page"""
     return render_template('home_page.html', title='Home',
-                           headings=headings, MedEase=MedEase)
+                           headings='MedEase', MedEase='MedEase')
+
+@bp.route('/')
+def landing():
+    """Landing page"""
+    return render_template('landing.html', title='Landing')

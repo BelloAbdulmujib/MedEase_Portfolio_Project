@@ -10,4 +10,4 @@ def doctor_index():
     # Assuming there's a way to identify doctors
     if not current_user.is_authenticated:
         return redirect(url_for('auth.login'))
-    return render_template('doctor/index.html', title='Doctor Dashboard')
+    return render_template('doctor.html', title='Doctor Dashboard')
