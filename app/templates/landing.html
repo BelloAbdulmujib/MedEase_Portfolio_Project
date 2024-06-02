@@ -18,12 +18,29 @@
           <a href="#features">Features</a>
           <a href="#about">About</a>
           <a href="/register">Sign Up</a>
+          <a href="/login">Login</a>
         </nav>
     </header>
     <section id="intro">
         <div class="main-text">
-            <div class="txt-1">Book an appointment with us from your home</div>
-            <div class="txt-2">at MedEase Hospital service</div>
+            <div class="txt-1"> Welcome to <strong>MedEase</strong> Online Booking and Management System.
+              <h1>Where we prioritize your health and convenience. Our cutting-edge hospital management system allows you to book appointments,
+              manage your healthcare records, and access a wealth of medical resources all from the comfort of your home
+              <br>Book an appointment with us from your home.</h1>
+            </div>
+            <div class="txt-2">MedEase Hospital is always at your Service </div>
+        </div>
+        <div class="row">
+
+          <div class="image">
+            <img src="{{ url_for('static', filename='images/hosp_reception.jpg') }}">
+          </div>
+          <div class="content">
+            <p>
+              Experience seamless appointment scheduling with our user-friendly hospital booking website. Book your appointment anytime, from anywhere.
+              Enjoy quick and hassle-free appointment bookings with our state-of-the-art online platform. Your health matters, and so does your time.
+            </p>
+          </div>
         </div>
     </section>
 
@@ -35,12 +52,12 @@
       <div class="row">
         <div class="content">
           <p>
-           Our team is available round the clock to assist you with any queries.
+           Take control of your healthcare journey with our advanced booking system. Easily schedule, reschedule, or cancel appointments at your convenience.
            Enjoy a Compassionate Care and Exceptional Service with MedEase
           </p>
         </div>
         <div class="image">
-          <img src="{{ url_for('static', filename='../images/1') }}">
+          <img src="{{ url_for('static', filename='images/doc_att_patient1.jpg') }}">
         </div>
 
       </div>
@@ -48,7 +65,7 @@
         <div class="row">
 
           <div class="image">
-            <img src="{{ url_for('static', filename='images/2 background.jpg') }}">
+            <img src="{{ url_for('static', filename='images/doc_att_patient2.jpg') }}">
           </div>
           <div class="content">
             <p>
@@ -64,17 +81,15 @@
               </p>
             </div>
             <div class="image">
-              <img src="{{ url_for('static', filename='images/chemist.jpg') }}">
+              <img src="{{ url_for('static', filename='images/hosp_walkway.jpg') }}">
             </div>
             <div class="feature-item">
               <h3>Expert Doctors</h3>
               <p>We have a panel of highly qualified and experienced doctors.</p>
+              <h3>Advanced Facilities</h3>
+              <p>Our hospital is equipped with the latest medical technology.</p>
           </div>
           </div>
-          <div class="feature-item">
-                    <h3>Advanced Facilities</h3>
-                    <p>Our hospital is equipped with the latest medical technology.</p>
-                </div>
     </section>
     <section id="about">
       <h1 class="heading"> <span>About</span> us</h1>
