@@ -2,7 +2,7 @@ from datetime import datetime
 from app import db, login
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from datetime import timedelta
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -44,10 +44,12 @@ class Doctor(db.Model):
 
 class Appointment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patient_id = db.Column(db.Integer, db.ForeignKey('patient.id'))
-    doctor_id = db.Column(db.Integer, db.ForeignKey('doctor.id'))
-    date = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    notes = db.Column(db.String(200))
+    doctor_id = db.Column(db.String(50), nullable=False)
+    date = db.Column(db.Date, nullable=False)
+    start_time = db.Column(db.Time, nullable=False)
+    end_time = db.Column(db.Time, nullable=False)
+    notes = db.Column(db.String(200), nullable=True)
+    
     # other appointment-related fields
 
     def __repr__(self):

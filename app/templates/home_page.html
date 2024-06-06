@@ -4,12 +4,13 @@
     <head>
         <title>MedEase</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/home_page.css') }}"/>
         <meta name="viewport" content="with=device-width, initial scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href=".static/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             integrity="sha384-o1qX/yDnlZArD2mYJsaI0cX2+LvZnU5bcnUl5U9CknCTMWdOjV4BLOs+hoNzIz9X" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="url(./static/style/style.css)">
     </head>
     <header>
         <!--overall container-->
@@ -18,7 +19,7 @@
                 <div class="col-md-7 border">
                     <div class="logo border">
                         <a href="index.html">
-                            <img src="./images/logo.jpg" alt="logo">
+                            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo">
                         </a>
                     </div>
                     <div class="menu" top="mt-20px">
@@ -27,7 +28,7 @@
                                 <a href="javascript:void(0);">Home</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">About</a>
+                                <a href="/home_page"></a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">Pages</a>
@@ -53,17 +54,17 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="javascript:void(0);"  class="btn-green mt-20px">
-                        <i class="fas fa-calendar-week"></i> Admin Page
+                    <a href="/appointments"  class="btn-green mt-20px">
+                        <i class="fas fa-calendar-week"></i> Book appointment
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="banner" style="background-image: url(./images/background_image.jpg);">
+    <section class="banner">
         <div class="container">
             <div class="banner-content">
-                <img src="./images/banner.jpg" alt= "Banner-Logo">
+                <img src="{{ url_for('static', filename='images/banner.jpg') }}" alt= "Banner-Logo">
                 <h1>Our expertise at your service</h1>
             </div>
             <div class="service">
@@ -169,7 +170,9 @@
                 <div class="col-md-4">
                     <div class="response">
                         <a href="javascript:void(0);">
-                            <div class="response-bg" style="background-image: url(./images/injection_4.webp);"></div>
+                            <div class="response-bg">
+                            <img src="{{ url_for('static', filename='images/injection_4.webp') }}">
+                            </div>
                             <div class="response-content">
                                 <div class="response-icon">
                                     <i class="fab fa-canadian-maple-leaf"></i>
@@ -193,7 +196,7 @@
             <div class="col-md-4">
                 <div class="response">
                         <a href="javascript:void(0);">
-                            <div class="response-bg" style="background-image: url(./images/old_woman_prix.jpg);"></div>
+                            <div class="response-bg"> <img src="{{ url_for('static', filename='images/old_woman_prix.jpg') }}" alt="logo"> </div>
                             <div class="response-content">
                                 <div class="response-icon">
                                     <i class="fas fa-leaf"></i>

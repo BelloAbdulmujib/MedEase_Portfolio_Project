@@ -1,4 +1,6 @@
 import os
+from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail, Message
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -17,4 +19,14 @@ class TestConfig(Config):
 def create_app(config_class='config.Config'):
     app = Flask(__name__)
     app.config.from_object(config_class)
+    app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # handles the email provider's SMTP server "gmail"
+    app.config['MAIL_PORT'] = 587  # Typically 587 for TLS or 465 for SSL
+    app.config['MAIL_USE_TLS'] = True
+    app.config['MAIL_USE_SSL'] = False
+    app.config['MAIL_USERNAME'] = 'acleff73@.com'
+    app.config['MAIL_PASSWORD'] = '360Kid42984'
+    app.config['MAIL_DEFAULT_SENDER'] = ('MedEase hospital', 'acleff73@gmail.com')
+
+    db = SQLAlchemy(app)
+    mail = Mail(app)
     ...

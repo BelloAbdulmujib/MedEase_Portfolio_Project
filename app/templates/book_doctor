@@ -1,0 +1,25 @@
+Book_doctor.html
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book {{ doctor.name }}</title>
+</head>
+<body>
+    <h1>Book {{ doctor.name }}</h1>
+    <form method="POST">
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required>
+        
+        <label for="patient_email">Patient Email:</label>
+        <input type="email" id="patient_email" name="patient_email" required>
+        
+        <label for="start_time">Start Time (YYYY-MM-DD HH:MM:SS):</label>
+        <input type="text" id="start_time" name="start_time" required>
+        
+        <button type="submit">Book</button>
+    </form>
+</body>
+</html>

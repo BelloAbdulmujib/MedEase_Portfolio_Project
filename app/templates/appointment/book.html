@@ -15,8 +15,16 @@
         {{ form.date() }}
     </p>
     <p>
+        {{ form.end_time.label }}<br>
+        {{ form.start_time() }}
+    </p><p>
+        {{ form.end_time.label }}<br>
+        {{ form.end_date() }}
+    </p>
+
+    <p>
         {{ form.notes.label }}<br>
-        {{ form.notes(size=64) }}
+        {{ form.notes(size=84) }}
     </p>
     <p>{{ form.submit() }}</p>
 </form>

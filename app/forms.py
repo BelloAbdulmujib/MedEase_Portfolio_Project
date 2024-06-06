@@ -1,7 +1,9 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, DateField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, DateField, TimeField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
 from app.models import User
+from wtforms.fields import DateField, EmailField
+from wtforms.validators import DataRequired, Email
 
 
 class LoginForm(FlaskForm):
@@ -33,5 +35,8 @@ class RegistrationForm(FlaskForm):
 class AppointmentForm(FlaskForm):
     doctor_id = StringField('Doctor ID', validators=[DataRequired()])
     date = DateField('Date', format='%Y-%m-%d', validators=[DataRequired()])
+    start_time = TimeField('Start Time', validators=[DataRequired()])
+    end_time = StringField('End Time', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
     notes = StringField('Notes')
-    submit = SubmitField('Book Appointment')
+    submit = SubmitField('Book')
