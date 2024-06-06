@@ -5,6 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import timedelta
 
 class User(UserMixin, db.Model):
+    """Handles the user database"""
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
@@ -21,6 +22,7 @@ class User(UserMixin, db.Model):
 
 
 class Patient(db.Model):
+    """Handles the patient database"""
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     name = db.Column(db.String(64))
@@ -32,6 +34,7 @@ class Patient(db.Model):
 
 
 class Doctor(db.Model):
+    """Handles the doctor's database"""
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     name = db.Column(db.String(64))
@@ -43,6 +46,7 @@ class Doctor(db.Model):
 
 
 class Appointment(db.Model):
+    """Handles Appointment database"""
     id = db.Column(db.Integer, primary_key=True)
     doctor_id = db.Column(db.String(50), nullable=False)
     date = db.Column(db.Date, nullable=False)

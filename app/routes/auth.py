@@ -14,6 +14,7 @@ def is_safe_url(target):
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
+    """Handles the login route"""
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
@@ -30,12 +31,14 @@ def login():
 
 @bp.route('/logout')
 def logout():
+    """Handles the logout route"""
     logout_user()
     return redirect(url_for('auth.login'))
 
 
 @bp.route('/register', methods=['GET', 'POST'])
 def register():
+    """Handles new user registration"""
     form = RegistrationForm()
     if form.validate_on_submit():
         user = User(username=form.username.data, email=form.email.data)

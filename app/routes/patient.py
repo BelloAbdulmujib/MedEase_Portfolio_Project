@@ -6,6 +6,7 @@ bp = Blueprint('patient', __name__)
 @bp.route('/patients')
 @login_required
 def patient_index():
+    """Patients Authentication"""
     # Assuming there's a way to identify patients
     if not current_user.is_authenticated:
         return redirect(url_for('auth.login'))

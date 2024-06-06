@@ -13,12 +13,14 @@ bp = Blueprint('appointment', __name__)
 @bp.route('/appointments')
 @login_required
 def index():
+    """Handles the appointment route"""
     appointments = Appointment.query.filter_by(patient_id=current_user.id).all()
     return render_template('appointment/index.html', appointments=appointments)
 
 @bp.route('/appointments/book', methods=['GET', 'POST'])
 @login_required
 def book():
+    """Handles the booking route"""
     form = AppointmentForm()
     if form.validate_on_submit():
         doctor_id = form.doctor_id.data
@@ -54,6 +56,7 @@ def book():
     return render_template('book.html', form=form)
 
 def send_confirmation_email(to_email, appointment):
+    """sends confirmation email"""
     msg = Message('Appointment Confirmation',
                   recipients=[to_email])
     msg.body = f'''Dear User,
