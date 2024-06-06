@@ -172,7 +172,7 @@ header img{
 }
 .service a:last-child{
     border-right: none;
-    background-image: url(/app/static/images/Capture.PNG);
+    background-image: url(./images/Capture.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
