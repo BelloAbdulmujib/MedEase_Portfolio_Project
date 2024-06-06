@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/landing.css') }}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/e1def26a4b.js" crossorigin="anonymous"></script>
+
+    <title>MedEase</title>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="/register">Sign Up</a>
+          <a href="/login">Login</a>
+          <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <section id="intro">
+        <div class="main-text">
+            <div class="txt-1"> Welcome to <strong>MedEase</strong> Online Booking and Management System.
+              <h1>Where we prioritize your health and convenience. Our cutting-edge hospital management system allows you to book appointments,
+              manage your healthcare records, and access a wealth of medical resources all from the comfort of your home
+              <br>Book an appointment with us from your home.</h1>
+            </div>
+            <div class="txt-2">MedEase Hospital is always at your Service </div>
+        </div>
+        <div class="row">
+
+          <div class="image">
+            <img src="{{ url_for('static', filename='images/hosp_reception.jpg') }}">
+          </div>
+          <div class="content">
+            <p>
+              Experience seamless appointment scheduling with our user-friendly hospital booking website. Book your appointment anytime, from anywhere.
+              Enjoy quick and hassle-free appointment bookings with our state-of-the-art online platform. Your health matters, and so does your time.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section id="features">
+      <h1 class="heading">
+        Features
+      </h1>
+
+      <div class="row">
+        <div class="content">
+          <p>
+           Take control of your healthcare journey with our advanced booking system. Easily schedule, reschedule, or cancel appointments at your convenience.
+           Enjoy a Compassionate Care and Exceptional Service with MedEase
+          </p>
+        </div>
+        <div class="image">
+          <img src="{{ url_for('static', filename='images/doc_att_patient1.jpg') }}">
+        </div>
+
+      </div>
+
+        <div class="row">
+
+          <div class="image">
+            <img src="{{ url_for('static', filename='images/doc_att_patient2.jpg') }}">
+          </div>
+          <div class="content">
+            <p>
+              Don't know how to get our service? No problem! Booking is as simple as clicking a link
+            </p>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="content">
+              <p>
+                Have questions or need assistance? Reach out to us through our contact page. Find phone numbers, email addresses, and an online contact form for your convenience. We are here to help you every step of the way.
+              </p>
+            </div>
+            <div class="image">
+              <img src="{{ url_for('static', filename='images/hosp_walkway.jpg') }}">
+            </div>
+            <div class="feature-item">
+              <h3>Expert Doctors</h3>
+              <p>We have a panel of highly qualified and experienced doctors.</p>
+              <h3>Advanced Facilities</h3>
+              <p>Our hospital is equipped with the latest medical technology.</p>
+          </div>
+          </div>
+    </section>
+    <section id="about">
+      <h1 class="heading"> <span>About</span> us</h1>
+
+      <div class="row">
+        <!-- <div class="image">
+          <img src="{{ url_for('static', filename='images/technology.jpg') }}">
+        </div> -->
+        <div class="content">
+          <p>
+            This project was created to enhance patient convenience with 24/7 access, reduces administrative workload, and improves patient satisfaction through easy scheduling 
+            and automated reminders. It ensures real-time updates, better data management, and integration with existing systems for streamlined operations. This modern approach boosts operational efficiency, 
+            accessibility, and competitiveness in healthcare services.
+          </p>
+        </div>
+      </div>
+      <div class="contributors">
+        <h1 class="heading">MEET THE <span>TEAM</span> </h1>
+        <ul class="members">
+          <li>
+            <a href="https://github.com/BelloAbdulmujib">Bello Abdulmujib</a>
+            <a href="https://www.linkedin.com/in/abdulmujib-bello-0bb2b8289">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/BelloAbdulmujib">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Gigi2303">Grace Ajibade</a>
+            <a href="https://www.linkedin.com/in/ajibolagrace/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/Gracybyb">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+             <a href="https://github.com/MoyosoreCoder">Mariam Kelani</a>
+             <a href="https://www.linkedin.com/in/mariam-kelani/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/moyosoreKelani">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="repo-link">
+          <a href="https://github.com/BelloAbdulmujib">
+             <i class="fa-brands fa-github"></i> View our project Here!
+          </a>
+          </p>
+      </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MedEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

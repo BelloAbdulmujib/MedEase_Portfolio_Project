@@ -1,0 +1,85 @@
+.dashboard-body {
+    font-family: Arial, sans-serif;
+    background: url(../images/background-chemist-3.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 130vh;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    color: #060875;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 140%;
+    margin: 0 auto;
+    height: 80vh;
+    position: relative;
+}
+
+.register-link {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: #0056b3;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
