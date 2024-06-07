@@ -53,7 +53,7 @@ def book():
         flash('Appointment booked successfully!')
         return redirect(url_for('index'))
 
-    return render_template('book.html', form=form)
+    return render_template('appointment/book.html', form=form)
 
 def send_confirmation_email(to_email, appointment):
     """sends confirmation email"""

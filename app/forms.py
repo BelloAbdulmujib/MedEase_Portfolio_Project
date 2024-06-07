@@ -41,7 +41,7 @@ class AppointmentForm(FlaskForm):
     doctor_id = StringField('Doctor ID', validators=[DataRequired()])
     date = DateField('Date', format='%Y-%m-%d', validators=[DataRequired()])
     start_time = TimeField('Start Time', validators=[DataRequired()])
-    end_time = StringField('End Time', validators=[DataRequired()])
+    end_time = TimeField('End Time', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
     notes = StringField('Notes')
     submit = SubmitField('Book')
