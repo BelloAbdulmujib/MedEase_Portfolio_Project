@@ -23,7 +23,7 @@ def create_app(config_class='config.Config'):
     app.config['MAIL_PORT'] = 587  # Typically 587 for TLS or 465 for SSL
     app.config['MAIL_USE_TLS'] = True
     app.config['MAIL_USE_SSL'] = False
-    app.config['MAIL_USERNAME'] = 'acleff73@.com'
+    app.config['MAIL_USERNAME'] = 'acleff73@gmail.com'
     app.config['MAIL_PASSWORD'] = '360Kid42984'
     app.config['MAIL_DEFAULT_SENDER'] = ('MedEase hospital', 'acleff73@gmail.com')
 

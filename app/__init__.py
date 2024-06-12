@@ -2,6 +2,9 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_mail import Mail
+from config import Config
+mail = Mail()
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -16,6 +19,13 @@ def create_app(config_class='config.Config'):
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
+
+    # Initialize extensions
+    mail.init_app(app)
+
+    # Register blueprints
+    from app.email.route import bp as email_bp
+    app.register_blueprint(email_bp)
 
     from app.routes import auth, patient, doctor, appointment, home_page
     

@@ -27,7 +27,7 @@ form {
     max-width: 500px;
     width: 140%;
     margin: 0 auto;
-    height: 80vh;
+    height: 90vh;
     position: relative;
 }
 
@@ -83,3 +83,14 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.appointments-list {
+        list-style-type: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }

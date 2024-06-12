@@ -6,7 +6,7 @@
 <h1>Your Appointments</h1>
 <ul>
     {% for appointment in appointments %}
-        <li>{{ appointment.date }} with Doctor ID: {{ appointment.doctor_id }}</li>
+        <li>{{ appointment.date }} starts {{appointment.start_time}} to  {{appointment.end_time}} with Doctor ID: {{ appointment.doctor_id }}</li>
     {% endfor %}
 </ul>
 <a href="{{ url_for('appointment.book') }}">Book a new appointment</a>

@@ -1,31 +1,28 @@
 {% extends "base.html" %}
 
-{% block title %}Book Appointment{% endblock %}
+{% block title %}Book Your Appointment{% endblock %}
 
 {% block content %}
-<h1>Book Appointment</h1>
 <form method="post" action="{{ url_for('appointment.book') }}">
     {{ form.hidden_tag() }}
     <p>
-        {{ form.doctor_id.label }}<br>
-        {{ form.doctor_id(size=32) }}
+        {{ form.doctor_id.label }} {{ form.doctor_id }}
     </p>
     <p>
-        {{ form.date.label }}<br>
-        {{ form.date() }}
+        {{ form.date.label }} {{ form.date }}
     </p>
     <p>
-        {{ form.end_time.label }}<br>
-        {{ form.start_time() }}
-    </p><p>
-        {{ form.end_time.label }}<br>
-        {{ form.end_date() }}
+        {{ form.start_time.label }} {{ form.start_time }}
     </p>
-
     <p>
-        {{ form.notes.label }}<br>
-        {{ form.notes(size=84) }}
+        {{ form.end_time.label }} {{ form.end_time }}
     </p>
-    <p>{{ form.submit() }}</p>
+    <p>
+        {{ form.notes.label }} {{ form.notes }}
+    </p>
+    <p>
+        <input type="email" name="email" placeholder="Your email" required>
+    </p>
+        <button type="submit">Book</button>
 </form>
 {% endblock %}
